@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>BetWise Predictions</title>
+  <link rel="stylesheet" href="style.css"/>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <nav class="navbar">
+      <div class="logo">BetWise</div>
+      <ul class="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#free">Free Predictions</a></li>
+        <li><a href="#premium">Premium</a></li>
+        <li><a href="#subscribe">Subscribe</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section id="home" class="hero">
+      <div class="hero-content">
+        <h1>Welcome to <span class="highlight">BetWise</span></h1>
+        <p>Get daily predictions for football games — free and premium tips curated by experts to guide your bets.</p>
+        <a href="#free" class="btn primary">View Free Predictions</a>
+      </div>
+    </section>
+
+    <section id="free" class="predictions-section">
+      <h2>🎯 Free Predictions</h2>
+      <div id="freePredictions" class="predictions-list">
+        
+      </div>
+    </section>
+
+    <section id="premium" class="premium-section">
+      <h2>🔒 Premium Predictions</h2>
+      <div class="premium-info">
+        <div class="premium-details">
+          <h3>Upgrade to Premium</h3>
+          <p>Gain access to high-confidence predictions with a proven track record. Updated daily.</p>
+          <ul>
+            <li>High Success Rate Tips</li>
+            <li> Early Access to Predictions</li>
+            <li> Daily Updates</li>
+            <li> Expert Insights</li>
+          </ul>
+          <div class="price">KES 580/Daily</div>
+          <button class="subscribe-btn" onclick="subscribeToPremium()">Subscribe Now</button>
+        </div>
+        <div class="premium-preview">
+          <h4>Preview Locked Tips</h4>
+          <div id="premiumPredictions" class="predictions-list locked">
+            
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="subscribe" class="subscribe-section">
+      <h2>Subscribe for Premium</h2>
+      <form id="subscribeForm">
+        <input type="email" placeholder="Enter your email" required />
+        <button type="submit">Subscribe Now</button>
+      </form>
+    </section>
+
+    <section id="adminLogin">
+      <h3>Admin Access</h3>
+      <form id="adminLoginForm">
+        <input type="password" id="adminPassword" placeholder="Enter Admin Password" required />
+        <button type="submit">Login</button>
+      </form>
+      <p id="adminLoginMsg" class="login-msg"></p>
+    </section>
+
+    <section id="adminPanel" style="display: none;">
+      <h2>Add New Prediction</h2>
+      <form id="addPredictionForm">
+        <input type="text" id="matchInput" placeholder="Match (e.g. PSG vs Lyon)" required />
+        <input type="text" id="tipInput" placeholder="Prediction (e.g. Over 2.5 Goals)" required />
+        <select id="typeInput">
+          <option value="free">Free</option>
+          <option value="premium">Premium</option>
+        </select>
+        <input type="date" id="dateInput" required />
+        <button type="submit">Add Prediction</button>
+      </form>
+    </section>
+
+    <section id="userLogin">
+      <h2>User Login</h2>
+      <form id="userLoginForm">
+        <input type="email" id="userEmail" placeholder="Email" required />
+        <input type="password" id="userPassword" placeholder="Password" required />
+        <button type="submit">Login</button>
+        <p id="userLoginMsg"></p>
+      </form>
+    </section>
+
+    <section id="authSection">
+      <h2>Login to Your BetWise Account</h2>
+      <form id="authForm">
+        <input type="email" id="email" placeholder="Email" required />
+        <input type="password" id="password" placeholder="Password" required />
+        <button type="submit">Login</button>
+        <p id="authMessage"></p>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 <span class="highlight">BetWise</span>. All Rights Reserved.</p>
+  </footer>
+
+  <script src="index.js"></script>
+</body>
+</html>

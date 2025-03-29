@@ -1,0 +1,39 @@
+{
+  "predictions": [
+    {
+      "id": "1",
+      "match": "Man City vs Arsenal",
+      "prediction": "Man City Win",
+      "type": "free",
+      "date": "2025-03-30"
+    },
+    {
+      "id": "2",
+      "match": "Barcelona vs Real Madrid",
+      "prediction": "Over 2.5 Goals",
+      "type": "premium",
+      "date": "2025-03-30"
+    },
+    {
+      "id": "0bbb",
+      "match": "Liberpool Vs Chelsea",
+      "tip": "over 3.5",
+      "type": "premium",
+      "date": "2025-02-28"
+    },
+    {
+      "id": "f0c2",
+      "match": "Nottingham vs Bourtmoth",
+      "tip": "1",
+      "type": "free",
+      "date": "2025-04-01"
+    },
+    {
+      "id": "7f87",
+      "match": "Nottingham vs Bourtmoth",
+      "tip": "1",
+      "type": "premium",
+      "date": "2025-02-21"
+    }
+  ]
+}
